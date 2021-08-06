@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+</head>
+
+<body>
+    <div ng-app="todoList" ng-controller="todo">
+        <input ng-model="addToDo">
+        <button ng-click="addItem()">Add</button>
+        <div ng-repeat="items in list">
+            <li>{{items}}</li>
+        </div>
+    </div>
+    <script src="angular.js"></script>
+    <script src="Todo.js"></script>
+</body>
+
+</html>
